@@ -9,11 +9,14 @@ public class Testing
         System.out.println("------------------------");
         System.out.println("Kalkulator");
         System.out.println("------------------------");
+
+        //input angka yang kan digunakan 
         System.out.println("Masukkan angka pertama: ");
         double num1 = input.nextDouble();
-
+        kalkulator.isiNum1(num1); // Set num1 di Kalkulator
         System.out.println("Masukkan angka kedua: ");
         double num2 = input.nextDouble();
+        kalkulator.isiNum2(num2); // Set num2 di Kalkulator
 
         System.out.println("------Jenis Operasi------");
         System.out.println("1. Penjumlahan");
@@ -26,19 +29,19 @@ public class Testing
             
         switch (pilih) {
             case 1:
-                System.out.println("Hasil dari: " + num1 + " + " + num2 + " = " + kalkulator.tambah(num1,num2));
+                System.out.println("Hasil dari: " + num1 + " + " + num2 + " = " + kalkulator.tambah());
                 break;
             case 2:
-                System.out.println("Hasil dari: " + num1 + " - " + num2 + " = " + kalkulator.kurang(num1,num2));
+                System.out.println("Hasil dari: " + num1 + " - " + num2 + " = " + kalkulator.kurang());
                 break;
             case 3:
-                System.out.println("Hasil dari: " + num1 + " * " + num2 + " = " + kalkulator.kali(num1,num2));
+                System.out.println("Hasil dari: " + num1 + " * " + num2 + " = " + kalkulator.kali());
                 break;
             case 4:
                 if (num2 != 0) {
-                    System.out.println("Hasil dari: " + num1 + " / " + num2 + " = " + kalkulator.bagi(num1,num2));
+                    System.out.println("Hasil dari: " + num1 + " / " + num2 + " = " + kalkulator.bagi());
                 } else {
-                    System.out.println("Error: Pembagian dengan nol tidak valid.");
+                    System.out.println("Pembagian dengan nol tidak valid.");
                 }                
                 break;
             default:
@@ -46,6 +49,6 @@ public class Testing
                 break;
        }
        input.close();
-       System.out.println("--------Terima Kasih-------");
+       System.out.println("---------------------------");
    }
 }
