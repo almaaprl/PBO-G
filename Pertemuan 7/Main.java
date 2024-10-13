@@ -46,7 +46,7 @@ public class Main {
                     break;
 
                 default:
-                    System.out.println("Pilihan tidak valid. Silakan pilih angka 1-4");
+                    System.out.println("Pilihan tidak valid!");
                     break;
             }
         }
