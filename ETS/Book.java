@@ -21,11 +21,10 @@ class Book {
         System.out.println("Penerbit: " + namaPenerbit);
         System.out.println("Kategori: " + kategori);
     }
-}
 
-public class Main {
     public static void main(String[] args) {
         Book buku1 = new Book("PBO", "Mr X", 2024, "PT. Apa", "Coding");
         buku1.printDetails();
     }
 }
+
